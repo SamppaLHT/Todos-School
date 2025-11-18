@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, SafeAreaView } from 'react-native';
+import { StyleSheet, View, SafeAreaView, Text } from 'react-native';
 import { useState, useEffect } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import AddTodo from './components/AddTodo';
@@ -59,6 +59,9 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
+      <View style={styles.titleContainer}>
+        <Text style={styles.title}>Todo List</Text>
+      </View>
       <View style={styles.header}>
         <AddTodo onAddTodo={addTodo} />
       </View>
@@ -74,9 +77,17 @@ const styles = StyleSheet.create({
     backgroundColor: '#f5f5f5',
     marginTop: 40,
   },
+  titleContainer: {
+    backgroundColor: '#ffffffff',
+    padding: 15,
+    alignItems: 'center',
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold'
+  },
   header: {
     backgroundColor: '#fff',
-    borderBottomWidth: 1,
-    borderBottomColor: '#ddd',
+    borderBottomWidth: 1
   },
 });

@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     padding: 10,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#ffffffff',
   },
   input: {
     flex: 1,
@@ -46,10 +46,9 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginRight: 10,
     borderWidth: 1,
-    borderColor: '#ddd',
   },
   button: {
-    backgroundColor: '#007AFF',
+    backgroundColor: '#6dd364ff',
     paddingHorizontal: 20,
     paddingVertical: 10,
     borderRadius: 5,

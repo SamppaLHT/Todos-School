@@ -25,11 +25,9 @@ const styles = StyleSheet.create({
     padding: 15,
     backgroundColor: '#fff',
     borderBottomWidth: 1,
-    borderBottomColor: '#ddd',
   },
   text: {
-    fontSize: 16,
-    color: '#333',
+    fontSize: 16
   },
   completedText: {
     textDecorationLine: 'line-through',
