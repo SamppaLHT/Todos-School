@@ -12,7 +12,7 @@ export default function TodoList({ todos, onToggleTodo }: TodoListProps) {
   if (todos.length === 0) {
     return (
       <View style={styles.emptyContainer}>
-        <Text style={styles.emptyText}>No tasks yet. Add one to get started!</Text>
+        <Text style={styles.emptyText}>No tasks yet.</Text>
       </View>
     );
   }
